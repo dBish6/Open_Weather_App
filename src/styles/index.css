@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Jeju Myeongjo";
+  src: url(/src/assets/fonts/JejuMyeongjo-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Mabry Pro";
+  src: url(/src/assets/fonts/MabryPro-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Mabry Pro";
+  src: url(/src/assets/fonts/MabryPro-Regular.ttf);
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Mabry Pro";
+}
+
+html {
+  background-color: #363636;
+}
+
+:root {
+  --accent100: #ffcacb;
+  --accent200: #ee978e;
+  --accent300: #e37266;
+  --accent400: #ec573f;
+  --accent500: #ed4a20;
+  --accent600: #de4021;
+  --accent700: #cc331b;
+
+  --lightWords: #f4f4f4;
+  --mild: #ececec;
+  --black: #363636;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  padding-inline: 120px;
+  @media (width <= 1140px) {
+    padding-inline: 64px;
+  }
+  @media (width <= 760px) {
+    padding-inline: 8px;
+  }
+}
+
+::selection {
+  background-color: var(--accent200);
+}
+
+#bg {
+  position: absolute;
+  z-index: -99;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.loaderContainer {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.loader {
+  width: 82px;
+  height: 82px;
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 8px solid transparent;
+    border-top-color: var(--accent400);
+  }
+  &:before {
+    z-index: 2;
+    animation: spin 1s infinite;
+  }
+  &:after {
+    border: 8px solid rgb(244, 244, 244, 0.4);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
