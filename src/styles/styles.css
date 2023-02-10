@@ -160,6 +160,13 @@ footer {
         & label {
           pointer-events: none;
         }
+        & .inputError {
+          position: absolute;
+          top: 6.5rem;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: red;
+        }
         @media (width <= 918px) {
           justify-self: center;
         }
