@@ -5,3 +5,5 @@ This weather app utilizes the powerful [Open Weather API](https://openweathermap
 ### Technoliges
 - ReactJs
 - PostCSS
+
+_You can view the app here: [https://dbish6.github.io/Open_Weather_App/](https://dbish6.github.io/Open_Weather_App/)_
