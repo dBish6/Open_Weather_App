@@ -12,9 +12,15 @@ const Wind = (props) => {
       <p>
         Direction: <span>{props.weatherData.wind.deg}°</span>
       </p>
-      <p>
-        Gust: <span>{props.weatherData.wind.gust}mph</span>
-      </p>
+      {props.weatherData.wind.gust ? (
+        <p>
+          Gust: <span>{props.weatherData.wind.gust}mph</span>
+        </p>
+      ) : (
+        <p>
+          Gust: <span>none</span>
+        </p>
+      )}
     </>
   );
 };
