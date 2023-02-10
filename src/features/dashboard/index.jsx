@@ -26,6 +26,7 @@ const DashboardFeature = () => {
   const changeStyles = StyleMode();
   const time = useTime();
 
+  // Initial city shown.
   useEffect(() => {
     handleData("Bay Roberts");
   }, []);
