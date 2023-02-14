@@ -61,20 +61,12 @@ footer {
   min-width: 1200px;
   margin: 24px 0;
 
-  /* background: linear-gradient(
-      231.22deg,
-      rgba(244, 244, 244, 0.4) 12.91%,
-      rgba(217, 217, 217, 0.1) 86.92%,
-      rgba(244, 244, 244, 0.1) 86.92%
-    )
-    border-box; */
   background: linear-gradient(
     231.22deg,
     rgba(244, 244, 244, 0.4) 12.91%,
     rgba(217, 217, 217, 0.1),
     rgba(244, 244, 244, 0.1)
   );
-  /* backdrop-filter: blur(16px); */
   backdrop-filter: blur(12px);
   border-radius: 32px;
   & p,
