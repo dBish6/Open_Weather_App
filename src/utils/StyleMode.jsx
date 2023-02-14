@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 // *Design Imports*
 import sunnyBackground from "../assets/images/sunny-bg-diego-ph.jpg";
 import rainBackground from "../assets/images/rain-bg-daoudi-aissa.jpg";
@@ -10,6 +8,26 @@ const StyleMode = () => {
   const changeStyles = (weatherData) => {
     if (weatherData && Object.keys(weatherData).length) {
       // I know I could of just added and removed classes, but this is cool!
+
+      // Set back to initial vales just in case.
+      document.querySelector(".dashboard").style.background =
+        "linear-gradient(231.22deg, rgba(244, 244, 244, 0.4) 12.91%, rgba(217, 217, 217, 0.1), rgba(244, 244, 244, 0.1))";
+      document.querySelector(".spotlightContainer").style.background =
+        "linear-gradient(229.82deg, rgba(244, 244, 244, 0.3) 0%, rgba(244, 244, 244, 0) 100%)";
+      document.querySelector(".spotlightContainer").style.borderTopColor =
+        "#ececec";
+      document.querySelectorAll(".divider").forEach((elem) => {
+        elem.style.borderColor = "#ececec";
+      });
+
+      document
+        .querySelectorAll(["p", "h1", "h2", "h4", "label"])
+        .forEach((elem) => {
+          elem.style.color = "#f4f4f4";
+        });
+      document.querySelectorAll(".ifSnow").forEach((elem) => {
+        elem.style.textShadow = "none";
+      });
 
       // Nice Weather
       if (
