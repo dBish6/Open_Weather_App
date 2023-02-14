@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Open_Weather_App/static/css/main.fb29925d.css",
-    "main.js": "/Open_Weather_App/static/js/main.0a903e0d.js",
+    "main.js": "/Open_Weather_App/static/js/main.2a7e3873.js",
     "static/media/JejuMyeongjo-Regular.ttf": "/Open_Weather_App/static/media/JejuMyeongjo-Regular.cb8c6e935f4f0049b717.ttf",
     "static/media/snow-bg-matt-palmer.jpg": "/Open_Weather_App/static/media/snow-bg-matt-palmer.5825cc7340676ff7b9ef.jpg",
     "static/media/rain-bg-daoudi-aissa.jpg": "/Open_Weather_App/static/media/rain-bg-daoudi-aissa.7d2e1fb7698690c3c06e.jpg",
@@ -11,10 +11,10 @@
     "static/media/night-bg-niklas-priddat.jpg": "/Open_Weather_App/static/media/night-bg-niklas-priddat.07954b43ad7bfabadb17.jpg",
     "index.html": "/Open_Weather_App/index.html",
     "main.fb29925d.css.map": "/Open_Weather_App/static/css/main.fb29925d.css.map",
-    "main.0a903e0d.js.map": "/Open_Weather_App/static/js/main.0a903e0d.js.map"
+    "main.2a7e3873.js.map": "/Open_Weather_App/static/js/main.2a7e3873.js.map"
   },
   "entrypoints": [
     "static/css/main.fb29925d.css",
-    "static/js/main.0a903e0d.js"
+    "static/js/main.2a7e3873.js"
   ]
 }
