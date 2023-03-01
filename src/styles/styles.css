@@ -194,6 +194,7 @@ footer {
     & .details {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       & .forecast {
         & h4 {
           & hr:first-of-type {
@@ -316,12 +317,14 @@ footer {
         }
       }
       @media (width <= 651px) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        row-gap: 1.5rem;
       }
-      @media (width <= 370px) {
-        grid-template-columns: 1fr;
-        row-gap: 24px;
+      @media (width <= 449px) {
+        column-gap: 2rem;
+      }
+      @media (width <= 347px) {
+        padding: 0 2rem;
       }
     }
   }
